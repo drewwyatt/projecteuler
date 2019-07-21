@@ -3,7 +3,6 @@
 // 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, ...
 // By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.
 
-
 fn fib(ceiling: i32) -> Vec<i32> {
   let mut sequence = vec!(1, 2);
   let mut next = 2;
@@ -34,4 +33,3 @@ fn it_can_return_a_sequence() {
 fn it_can_sum_even_numbers() {
   assert_eq!(44, sum_even(fib(89)))
 }
-
