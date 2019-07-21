@@ -7,4 +7,5 @@ fn show_answer_for<F>(number: i32, solution: F) where F: Fn() -> i32 {
 
 fn main() {
   show_answer_for(1, problems::problem_1::main);
+  show_answer_for(2, problems::problem_2::main);
 }
